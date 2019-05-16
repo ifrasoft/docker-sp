@@ -20,6 +20,7 @@ services:
     ports:
       - "9743:9743"
       - "9390:9390"
+      - "5001:5001"
     healthcheck:
       test: ["CMD", "nc", "-z","localhost", "9743"]
       interval: 10s
@@ -30,6 +31,7 @@ services:
     container_name: wso2sp-worker
     ports:
       - "9090:9090"
+      - "5002:5002"
     healthcheck:
       test: ["CMD", "nc", "-z","localhost", "9090"]
       interval: 10s
@@ -45,6 +47,7 @@ services:
     container_name: wso2sp-dashboard
     ports:
       - "9643:9643"
+      - "5003:5003"
     healthcheck:
       test: ["CMD", "nc", "-z","localhost", "9643"]
       interval: 10s
