@@ -24,7 +24,7 @@ rat.txt
 .DS_Store
 
 # exclude everything
-**/files/*
+**/files/wso2sp-4.4.0*
 
 # exception to the rule
 !**/files/.gitkeep
